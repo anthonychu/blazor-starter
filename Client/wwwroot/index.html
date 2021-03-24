@@ -18,6 +18,19 @@
             }
         });
     </script>
+      <script>
+        (function(a,t,i){var e="MSEI";var s="Analytics";var o=e+"queue";a[o]=a[o]||[];var r=a[e]||function(n){var t={};t[s]={};function e(e){while(e.length){var r=e.pop();t[s][r]=function(e){return function(){a[o].push([e,n,arguments])}}(r)}}var r="track";var i="set";e([r+"Event",r+"View",r+"Action",i+"Property",i+"User","initialize","teardown"]);return t}(i.name);var n=i.name;if(!a[e]){a[n]=r[s];a[o].push(["new",n]);setTimeout(function(){var e="script";var r=t.createElement(e);r.async=1;r.src=i.src;var n=t.getElementsByTagName(e)[0];n.parentNode.insertBefore(r,n)},1)}else{a[n]=new r[s]}if(i.user){a[n].setUser(i.user)}if(i.props){for(var c in i.props){a[n].setProperty(c,i.props[c])}}a[n].initialize(i.cfg)})(window,document,{
+          src:"https://download.pi.dynamics.com/sdk/web/msei-0.min.js",
+          name:"Microsoft",
+          cfg:{
+            ingestionKey:"ac636cecb0f34ea4a18bfdf6bcac9bc9-06dff19d-bdd1-4057-9c3e-14ae9acd793d-7169",
+            autoCapture:{
+              view:true,
+              click:true
+            }
+          }
+        });
+      </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Blazor Starter</title>
